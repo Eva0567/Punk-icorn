@@ -26,8 +26,27 @@
         .slide img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; border: 2px solid #ff007f; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-1000px); } }
         
-        .story-section { background: rgba(0,0,0,0.6); padding: 30px; border-radius: 15px; margin: 40px 0; line-height: 1.6; border: 1px solid #444; }
-        .story-section h2 { color: #00f2fe; margin-bottom: 15px; }
+        .section { background: rgba(0,0,0,0.6); padding: 30px; border-radius: 15px; margin: 40px 0; line-height: 1.6; border: 1px solid #444; }
+        .section h2 { color: #00f2fe; margin-bottom: 15px; }
+        .section ol { margin-left: 20px; }
+        .section li { margin-bottom: 10px; }
+        .section p { margin-bottom: 10px; }
+        
+        /* Mint Button */
+        .mint-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff007f, #7928ca);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);
+        }
+        .mint-btn:hover { transform: scale(1.05); opacity: 0.9; }
         
         footer { text-align: center; padding: 20px; border-top: 1px solid #444; color: #888; font-size: 0.9rem; }
     </style>
@@ -53,11 +72,20 @@
             </div>
         </div>
 
-        <section class="story-section">
+        <section class="section">
             <h2>The Story Behind Punk-icorn</h2>
             <p>In the dark alleys of a future metropolis, Punk-icorn was born. More than just a unicorn, they are a symbol of digital rebellion, bringing color to a monotone world. Legend says that every Punk-icorn holds a secret piece of code from the lost ancient internet.</p>
-            <br>
-            <p>Collectors call them the "Guardians of Graffiti." They appear in the digital wallets of those who dare to dream and defy the mainstream. Owning a Punk-icorn means you are part of the art revolution on the blockchain.</p>
+        </section>
+
+        <section class="section">
+            <h2>Exclusive Benefits</h2>
+            <p>Holding a Punk-icorn NFT is not just about owning art. As a member of our community, you will receive <strong>exclusive distributions of the upcoming PUNK-ICORN token</strong>. We are building a decentralized future where our NFT holders are rewarded for their loyalty and participation in the ecosystem.</p>
+        </section>
+
+        <section class="section">
+            <h2>
+            </ol>
+            <a href="https://opensea.io/create" class="mint-btn" target="_blank">Mint Your Punk-icorn Now</a>
         </section>
 
         <footer>
@@ -66,4 +94,3 @@
     </div>
 </body>
 </html>
-
