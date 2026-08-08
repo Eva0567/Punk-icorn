@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punk-icorn NFT Marketplace</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body {
+            background: url('unipunk.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            min-height: 100vh;
+            position: relative;
+        }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 1; }
+        .container { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; padding: 20px; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+        .logo { font-size: 28px; font-weight: bold; color: #ff007f; letter-spacing: 2px; }
+        
+        /* Slider Styles */
+        .slider-container { width: 100%; overflow: hidden; padding: 40px 0; margin: 40px 0; }
+        .slider-track { display: flex; width: calc(250px * 8); animation: scroll 20s linear infinite; }
+        .slide { width: 250px; padding: 0 15px; flex-shrink: 0; }
+        .slide img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; border: 2px solid #ff007f; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-1000px); } }
+        
+        .story-section { background: rgba(0,0,0,0.6); padding: 30px; border-radius: 15px; margin: 40px 0; line-height: 1.6; border: 1px solid #444; }
+        .story-section h2 { color: #00f2fe; margin-bottom: 15px; }
+        
+        footer { text-align: center; padding: 20px; border-top: 1px solid #444; color: #888; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <div class="logo">PUNK-ICORN</div>
+        </header>
+
+        <!-- Infinite Slider -->
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide"><img src="IMG_20260809_000031.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235944.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235808.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235643.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260809_000031.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235944.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235808.jpg" alt="NFT"></div>
+                <div class="slide"><img src="IMG_20260808_235643.jpg" alt="NFT"></div>
+            </div>
+        </div>
+
+        <section class="story-section">
+            <h2>The Story Behind Punk-icorn</h2>
+            <p>In the dark alleys of a future metropolis, Punk-icorn was born. More than just a unicorn, they are a symbol of digital rebellion, bringing color to a monotone world. Legend says that every Punk-icorn holds a secret piece of code from the lost ancient internet.</p>
+            <br>
+            <p>Collectors call them the "Guardians of Graffiti." They appear in the digital wallets of those who dare to dream and defy the mainstream. Owning a Punk-icorn means you are part of the art revolution on the blockchain.</p>
+        </section>
+
+        <footer>
+            &copy; 2026 Punk-icorn Official. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
+
